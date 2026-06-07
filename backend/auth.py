@@ -59,4 +59,4 @@ async def callback(code: str):
     token = jwt.encode(payload, JWT_SECRET, algorithm="HS256")
 
     # ส่ง token กลับไป React
-    return RedirectResponse(f"http://localhost:5173/dashboard?token={token}")
+    return RedirectResponse(f"https://test1-v6lz.vercel.app/dashboard?token={token}")
